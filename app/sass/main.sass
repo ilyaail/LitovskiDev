@@ -1,0 +1,768 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+$MonBold: MontserratBold, sans-serif
+$MonSB: MontserratSemiBold, sans-serif
+$MonReg: MontserratRegular, sans-serif
+$MonEB: MontserratExtraBold, sans-serif
+$MonM: MontserratMedium, sans-serif
+$MonI: MontserratItalic, sans-serif
+*
+	font-family: $MonReg
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+nav
+	border-bottom: 1px solid #e1e1e1
+.all_partners
+	display: none
+.request_btn
+	border: 1px solid #fca416
+	border-radius: 20px
+	padding: 10px 15px
+	color: #070f12
+.request_btn:hover
+	text-decoration: none
+	color: #070f12
+.request_btn span
+	font-weight: 600
+	color: #070f12
+nav .active
+	border-bottom: 2px solid #fca416
+.nav-item
+	padding: 0 5px
+.hero
+	background: url('/img/Landing_page.png') no-repeat
+	background-size: contain
+	min-height: 1280px
+	background-position: center 300px
+.nav-item a
+	font-size: 16px
+
+.nav-item a:hover
+	color: #070f12
+.hero p,
+.hero h1
+	margin: 0
+.hero_title
+	font-size: 50px
+	color: #070f12
+.hero_text
+	font-size: 32px
+	color: #070f12
+.hero_text span
+	color: #fca416
+.hero_subtext
+	color: #1d1d1d
+	font-size: 22px
+.hello_text
+	padding-top: 120px
+.choose_btn
+
+    background: -webkit-linear-gradient(left, rgba(252,164,22,1) 0%, rgba(255,223,16,1) 100%)
+    padding: 15px 30px
+    color: #1d1d1d
+    font-size: 16px
+    border-radius: 40px
+    line-height: 70px
+    font-family: $MonBold
+
+.choose_btn:hover
+	color: #1d1d1d
+	text-decoration: none
+.hero_image
+	position: relative
+.tablet
+	position: absolute
+	left: 75%
+	top: 70%
+
+.about
+	h2, p, img
+		text-align: center
+
+.partners_image
+	width: 100%
+	text-align: center
+.section_descr
+	max-width: 815px
+	margin: 0 auto
+.nav-link
+	font-size: 16px
+	padding-bottom: 0
+	color: #070f12
+.nav-item
+	position: relative
+.sertificates_drop
+
+	position: absolute
+.request_btn i
+	color: #faa41a
+	padding-right: 5px
+.nice-select
+	border: none
+.nice-select.open .list
+	border: none
+	box-shadow: none
+.sertificates_drop
+	z-index: 2
+	display: none
+.sertificates_drop-list
+	list-style-type: none
+	background: #fff
+	padding-left: 15px
+	padding-right: 30px
+	padding-top: 15px
+	padding-bottom: 25px
+	font-weight: $MonSB
+.sertificates_drop-list-item a:hover
+	color: #faa41a
+
+.nice-select:after
+	border: 4px solid transparent
+	border-top: 6px solid #000
+	transform: rotate(0deg) !important
+.nice-select .option
+	padding-left: 30px
+	padding-right: 35px
+.nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus
+	background-color: initial
+.request_btn
+	line-height: 40px
+.hero_title
+	font-family: $MonBold
+.hero_text span
+	font-family: $MonBold
+.section_title
+	font-family: $MonEB
+	font-size: 32px
+	text-align: center
+.section_descr
+	font-size: 18px
+.section_descr:nth-of-type(2)
+	font-size: 16px
+	padding-top: 25px
+.partners_image
+	padding-top: 30px
+	max-width: 700px
+	margin: 0 auto
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	align-items: center
+.partners_image img:nth-of-type(2)
+	height: 45px
+.faq_cards .section_title
+	padding-top: 80px
+	padding-bottom: 50px
+
+.card-header
+	background: transparent
+	border: none
+.card
+	border: none
+.card-body
+	padding-left: 3rem
+	padding-top: 0
+
+.card-header h5
+	font-family: $MonM
+	color: #070f12
+	font-size: 18px
+	text-transform: uppercase
+
+.card-header a:hover
+	text-decoration: none
+
+.card-header h5 i
+	color: #cbccce
+	font-size: 30px
+	vertical-align: middle
+.card-header a
+	display: block
+.faq_cards
+	background: url('/img/Pilkas fonas.png') no-repeat center 350px
+	background-size: cover
+.card
+	background: transparent
+.certificates_item
+	position: relative
+	background: #fff
+	text-align: center
+	border-radius: 5px
+	box-shadow: 0px 4px 46px rgba(0,0,0,0.1)
+.certificate_name
+	font-family: $MonBold
+	font-size: 22px
+	margin-bottom: 0
+	padding-top: 40px
+
+.certificate_type
+	font-size: 22px
+	font-family: $MonReg
+.item_action
+	background: -webkit-linear-gradient(left, rgba(252,164,22,1) 0%, rgba(255,223,16,1) 100%)
+	font-family: $MonBold
+	font-size: 16px
+	padding: 18px 104px
+	border-radius: 40px
+	display: inline-block
+	margin-bottom: 25px
+	color: #1d1d1d
+.item_action:hover
+	color: #1d1d1d
+	text-decoration: none
+.advisor
+	position: absolute
+	right: -5%
+	top: -10%
+.certificates
+	padding-bottom: 45px
+.combined
+	background-color: transparent
+	background: url('/img/Combined-certificate.png') no-repeat center center
+	background-size: contain
+	text-align: center
+	padding-top: 50px
+	padding-bottom: 40px
+	position: relative
+
+.title_combined
+	font-family: $MonBold
+	font-size: 34px
+	margin-bottom: 0
+.subtitle_combined
+	font-size: 34px
+	margin-top: 0
+	line-height: 25px
+	margin-bottom: 0
+.certificate_type
+	font-family: $MonReg
+	font-size: 34px
+.special_text
+	font-size: 16px
+	color: #fff
+	font-family: $MonSB
+.combined_action
+	font-family: $MonBold
+	font-size: 16px
+	color: #1d1d1d
+	padding: 20px 40px
+	background: #fff
+	border-radius: 40px
+	
+	display: inline-block
+.combined_action:hover
+	color: #1d1d1d
+	text-decoration: none
+
+footer
+	background-color: #f9f9f9
+	padding-top: 70px
+	text-align: center
+	padding-bottom: 60px
+.footer__list-item
+	display: inline
+.footer__list-item:nth-child(1):after,
+.footer__list-item:nth-child(2):after	
+	content: '•'
+	padding-left: 10px
+	padding-right: 10px
+	color: #303030
+	font-size: 24px
+.footer__list-item a
+	color: #303030
+	font-size: 14px
+.footer__list-item a:hover
+	text-decoration: none
+	color: #303030
+.info
+	margin-bottom: 0
+.info a
+	font-family: $MonBold
+	color: #faa41a
+.info a:hover
+	text-decoration: none	
+.static-nav
+	list-style-type: none
+	max-width: 100%
+	margin: 0
+	width: 100%
+	display: flex
+	justify-content: flex-end
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
+	background: #283033
+	height: 2px
+.request_btn_m
+	display: none
+.option.selected
+	font-family: $MonBold
+	color: #faa41a
+
+
+.sertificates
+	background: url('/img/Fonas.png') no-repeat center bottom
+	background-color: #f9f9f9
+	h1,p
+		text-align: left 
+.sertificates_text-italic
+	font-family: $MonI
+	font-size: 22px
+	margin: 0
+	padding-top: 10px
+	padding-bottom: 10px
+.sertificates_text
+	font-family: $MonReg
+	font-size: 18px
+	margin-left: 0
+	padding-bottom: 15px
+.up_img
+	padding-bottom: 40px
+.what_can_do
+	position: relative
+	padding-left: 20px
+	font-family: $MonReg
+	color: #1d1d1d
+	font-size: 18px
+.what_can_do:before
+	position: absolute
+	content: ''
+	left: 0
+	top: 0
+	background-color: #faa41a
+	height: 100%
+	width: 3px
+
+.what_can_do a
+	color: #464646
+	font-family: $MonM
+	border-bottom: 1px solid #464646
+.what_can_do a:hover
+	text-decoration: none
+.sertificates_advantages img
+	max-width: 30px
+	display: -webkit-inline-flex
+	display: -moz-inline-flex
+	display: -ms-inline-flex
+	display: -o-inline-flex
+	display: inline-flex
+
+.combined_item-title
+	font-size: 22px
+	font-family: $MonBold
+	padding-left: 10px
+	margin-bottom: 0
+	display: -webkit-inline-flex
+	display: -moz-inline-flex
+	display: -ms-inline-flex
+	display: -o-inline-flex
+	display: inline-flex
+	vertical-align: middle
+.combined_item-text
+	padding-top: 10px
+.sertificates_advantages
+	padding-top: 20px
+.sertificates_advantages
+	border-bottom: 1px solid #e1e1e1
+	padding-bottom: 25px
+	margin-bottom: 25px
+.room_image
+.ui-button
+	border: none
+	background: transparent
+	padding-left: 50px
+.rooms_tabs ul li
+	padding-left: 0
+	background: transparent
+	margin-right: 50px
+.detail
+	padding-top: 50px
+.rooms_tabs ul li a
+	padding: 0
+	font-size: 22px
+	border-bottom: 1px solid #464646
+	color: #464646
+	border-radius: 0px !important
+	margin-right: 10px
+.rooms_tabs ul li a.active
+	color: #faa41a !important
+	border-bottom: 1px solid #faa41a
+	background: transparent !important
+	border-radius: 0
+	font-family: $MonBold
+	padding: 0
+.tab_title
+	font-family: $MonM
+	font-size: 20px
+	color: #070f12
+	padding-bottom: 10px
+.tab_description
+	font-size: 16px
+	color: #464646
+.tab_description:first-of-type
+	margin-bottom: 0
+.detail__list-item span
+	font-family: $MonBold
+	font-size: 16px
+.detail__list-item
+	color: #070f12
+.detail__list
+	list-style-type: none
+	border-left: 4px solid #faa41a
+.detail__list-item a
+	color: #65a2fe !important
+	font-size: 16px !important
+	border-bottom: 1px solid #65a2fe !important
+
+
+.item_add_to_cart
+	background: -webkit-linear-gradient(left, rgba(252,164,22,1) 0%, rgba(255,223,16,1) 100%)
+	font-family: $MonBold
+	font-size: 16px
+	padding: 18px 72px
+	border-radius: 40px
+	display: inline-block
+	margin-bottom: 25px
+	color: #1d1d1d
+.item_add_to_cart:hover
+	color: #1d1d1d
+	text-decoration: none
+.ui-spinner-up 
+	background: url('/img/Arrow up.svg') no-repeat !important
+	background-position: bottom
+	max-height: 8px
+	margin-top: 9px
+.ui-spinner-down
+	background: url('/img/Arrow down.svg') no-repeat !important
+	background-position: top
+	max-height: 8.5px
+	margin-bottom: 9px
+#spinner,
+#spinner2
+	max-width: 55px
+	margin-right: 0
+	padding-left: 10px
+.ui-spinner a.ui-spinner-button
+	border: none
+.ui-widget.ui-widget-content
+	border-radius: 40px
+.quantity
+	display: -webkit-inline-flex
+	display: -moz-inline-flex
+	display: -ms-inline-flex
+	display: -o-inline-flex
+	display: inline-flex
+.item_add_to_cart
+	display: -webkit-inline-flex
+	display: -moz-inline-flex
+	display: -ms-inline-flex
+	display: -o-inline-flex
+	display: inline-flex
+.action_section span
+	font-family: $MonBold
+	color: #1d1d1d
+	font-size: 16px
+	margin-right: 15px
+.buy_price
+	font-size: 48px
+	font-family: $MonBold
+	color: #1d1d1d
+	text-align: center !important
+
+	margin-bottom: 0
+.buy_description
+	color: #464646
+	font-size: 16px
+	text-align: center !important
+	max-width: 420px
+	margin-bottom: 0
+.buy_title
+	font-size: 22px
+	color: #1d1d1d
+	text-align: center !important
+	font-family: $MonBold
+.buy_image
+	margin: 0 auto
+.buy_section
+	padding-top: 90px
+.body-sertificates footer
+	background: transparent
+.body-sertificates footer .container
+	border-top: 1px solid #e1e1e1
+	padding-top: 30px
+.tab-pane .row>div
+	padding-right: 0
+
+// @import "media" // Всегда в конце
+
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+	.hello_text
+		padding-top: 70px
+	.static-nav
+		width: 60%
+	.tablet
+		max-width: 425px
+		top: 50%
+		left: 60%
+	.hero_subtext
+		max-width: 525px
+	.choose_btn
+		padding: 20px 30px
+		margin-top: 40px
+		line-height: 140px
+	.hero
+		min-height: 720px
+	.section_descr
+		max-width: 720px
+	.partners_image
+		padding-top: 55px
+	.section_title
+		font-size: 22px
+	.last-certific
+		background: url('/img/4.png') no-repeat center center 
+		background-size: cover
+		padding-bottom: 30px
+	.title_combined
+		padding-top: 91px
+
+	.special_text
+		padding-bottom: 130px
+	.item_img
+		width: 100%
+	.advisor
+		top: -5%
+	.container
+		max-width: 750px
+	.certificates_item
+		margin-bottom: 30px
+	.subtitle_combined
+		margin-bottom: 10px
+	.footer__list
+		padding: 0
+	.sertificates h1.section_title
+		font-size: 32px
+	.what_can_do a
+		color: #faa41a
+		border-color: #faa41a
+	.what_can_do
+		height: 50%
+	.combined_item-text
+		max-width: 250px
+	.combined_item-title
+		vertical-align: bottom
+
+	.order-lg-2
+		order: 2
+	.order-lg-1
+		order: 1
+	.room_image
+		margin: 0 auto
+		margin-bottom: 60px
+	.buy_section
+		padding-top: 50px
+	.buy_description
+		max-width: 390px
+		margin: 0 auto
+	.action_section
+		text-align: center
+	.ui-button
+		padding-left: 0
+	.sertificates
+		background: #f9f9f9
+	.body-sertificates footer
+		padding-top: 0
+		border-top: none
+	.body-sertificates footer .container
+		border-top: none
+@media only screen and (max-width: 550px)
+	.request_btn
+		display: none
+	.request_btn_m
+		display: block
+	.request_btn_m
+		border-radius: 20px
+		padding: 10px 15px
+		color: #faa41a
+	.navbar-brand
+		order: 2
+
+	.request_btn_m:hover
+		text-decoration: none
+		color: #070f12
+	.request_btn_m span
+		font-weight: 600
+		color: #070f12
+		padding-left: 10px
+	.sertificates .section_title
+		text-align: center
+	.static-nav-item:nth-child(1)
+		display: none
+	.static-nav
+		width: 25%
+		order: 3
+		padding: 0
+	.hamburger
+		padding: 31px 0px
+		padding-right: 15px
+	.navbar
+		padding: 0
+	.navbar-brand
+		margin: 0
+	.static-nav-item a
+		padding-right: 0
+	.navbar-toggler
+		order: 1
+	.navbar-collapse
+		order: 4
+	.hello_text
+		padding-top: 60px
+	.hero
+		min-height: 720px
+	.hero_title
+		font-size: 32px
+		text-align: center
+	.hero_text
+		font-size: 22px
+		text-align: center
+	.hero_subtext
+		font-size: 16px
+		text-align: center
+	.hero
+		background-position: center 420px !important
+		background: url('/img/Landing page_m.png') no-repeat
+	.tablet
+		position: relative
+		left: 0
+		right: 0
+		top: 0
+		padding-top: 30px
+		padding-bottom: 10px
+	.choose_btn
+		text-align: center
+	.hello_text
+		text-align: center
+
+	.partners_image img:nth-child(1),
+	.partners_image img:nth-child(2),
+	.partners_image img:nth-child(3)
+		display: none
+	.all_partners
+		display: block
+	.card-header h5
+		font-size: 16px
+	.card-body
+		padding-left: 2rem
+	.accordion>.card .card-header
+		padding-left: 0
+		padding-right: 0
+	.certificates_item
+		margin-bottom: 30px
+	.certificate_type
+		font-size: 22px
+	.advisor
+		top: 0
+		right: 0
+	.last-certific
+		background: url('/img/4.png') no-repeat center center 
+		background-size: cover
+		padding-bottom: 30px
+	.title_combined
+		padding-top: 110px
+		
+		font-size: 22px
+	.subtitle_combined
+		font-size: 22px
+	.special_text
+		font-size: 16px
+	.combined_action
+		font-size: 16px
+		padding: 15px 20px
+		margin-top: 50px
+	.footer__list-item:nth-child(2):after
+		content: none
+	.footer__list
+		padding-left: 0
+	.footer__list-item
+		display: inline-block
+
+@media only screen and (max-width: 1024px) and (min-width: 768px)
+	.tablet
+		max-width: 270px
+		top: 60%
+@media only screen and (max-width: 1224px) and (min-width: 1023px)
+	.tablet
+		max-width: 400px
+@media only screen and (max-width: 1600px) and (min-width: 1400px)
+	.hero
+		min-height: 1100px
+@media only screen and (max-width: 1500px) and (min-width: 1224px)
+	.tablet
+		max-width: 500px
+		top: 70%
+		left: 80%
+
+@media only screen and (min-width: 1500px)
+	.static-nav
+		order: 3
+		width: 30%
+		padding-left: 0
+	.nice-select
+		margin-right: 25px
+	.nav-item
+		padding: 0 .7rem
