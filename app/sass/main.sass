@@ -10,6 +10,7 @@ $MonM: MontserratMedium, sans-serif
 $MonI: MontserratItalic, sans-serif
 *
 	font-family: $MonReg
+	outline: 0 !important
 *
 	-webkit-box-sizing: border-box
 	-moz-box-sizing: border-box
@@ -44,6 +45,7 @@ body textarea:required:valid
 
 html, body
 	height: 100%
+	overflow-x: hidden
 
 body
 	font-size: 16px
@@ -85,7 +87,7 @@ nav .active
 .nav-item
 	padding: 0 5px
 .hero
-	background: url('/img/Landing_page.png') no-repeat
+	background: url('../img/Landing_page.png') no-repeat
 	background-size: contain
 	min-height: 1280px
 	background-position: center 300px
@@ -237,7 +239,7 @@ nav .active
 .card-header a
 	display: block
 .faq_cards
-	background: url('/img/Pilkas fonas.png') no-repeat center 350px
+	background: url('../img/Pilkas fonas.png') no-repeat center 350px
 	background-size: cover
 .card
 	background: transparent
@@ -276,7 +278,7 @@ nav .active
 	padding-bottom: 45px
 .combined
 	background-color: transparent
-	background: url('/img/Combined-certificate.png') no-repeat center center
+	background: url('../img/Combined-certificate.png') no-repeat center center
 	background-size: contain
 	text-align: center
 	padding-top: 50px
@@ -355,9 +357,11 @@ footer
 	font-family: $MonBold
 	color: #faa41a
 
+.buy_price_m
+	display: none
 
 .sertificates
-	background: url('/img/Fonas.png') no-repeat center bottom
+	background: url('../img/Fonas.png') no-repeat center bottom
 	background-color: #f9f9f9
 	h1,p
 		text-align: left 
@@ -374,6 +378,7 @@ footer
 	padding-bottom: 15px
 .up_img
 	padding-bottom: 40px
+	width: 100%
 .what_can_do
 	position: relative
 	padding-left: 20px
@@ -422,7 +427,7 @@ footer
 	border-bottom: 1px solid #e1e1e1
 	padding-bottom: 25px
 	margin-bottom: 25px
-.room_image
+.room_image,
 .ui-button
 	border: none
 	background: transparent
@@ -462,9 +467,21 @@ footer
 	font-size: 16px
 .detail__list-item
 	color: #070f12
-.detail__list
-	list-style-type: none
-	border-left: 4px solid #faa41a
+// .detail__list
+// 	list-style-type: none
+// 	border-left: 4px solid #faa41a
+
+.detail ul
+	position: relative
+
+.detail ul:before
+	position: absolute
+	content: ''
+	left: 0
+	top: 0
+	background-color: #faa41a
+	height: 100%
+	width: 3px
 .detail__list-item a
 	color: #65a2fe !important
 	font-size: 16px !important
@@ -484,17 +501,16 @@ footer
 	color: #1d1d1d
 	text-decoration: none
 .ui-spinner-up 
-	background: url('/img/Arrow up.svg') no-repeat !important
+	background: url('../img/Arrow up.svg') no-repeat !important
 	background-position: bottom
 	max-height: 8px
 	margin-top: 9px
 .ui-spinner-down
-	background: url('/img/Arrow down.svg') no-repeat !important
+	background: url('../img/Arrow down.svg') no-repeat !important
 	background-position: top
 	max-height: 8.5px
 	margin-bottom: 9px
-#spinner,
-#spinner2
+.spinner
 	max-width: 55px
 	margin-right: 0
 	padding-left: 10px
@@ -546,9 +562,215 @@ footer
 .body-sertificates footer .container
 	border-top: 1px solid #e1e1e1
 	padding-top: 30px
-.tab-pane .row>div
-	padding-right: 0
 
+.ui-button:focus
+	border: none
+	background: transparent
+.ui-button
+	padding: 0
+.order-lg-2
+	order: 1
+.order-lg-1
+	order: 2
+.sertificate_item .buy_price
+	font-size: 32px
+	padding-top: 30px
+	padding-bottom: 20px
+
+.ui-button:selection
+	background-color: transparent
+
+	/*page insight*/
+.prev
+	background: url('../img/next.svg') no-repeat center center !important
+	width: 35px
+	height: 35px
+	position: absolute
+	top: 23%
+	z-index: 99
+	left: 20%
+	transform: rotate(180deg)
+.next
+	background: url('../img/next.svg') no-repeat center center !important
+	width: 35px
+	height: 35px
+	position: absolute
+	top: 23%
+	z-index: 99
+	right: 20%
+.sertificates_slider
+	margin-bottom: 40px
+.insight .sertificates_text,
+.secretroom .sertificates_text
+	word-spacing: -2px
+.detail__list
+	list-style-type: none
+.detail_room
+	border: 1px solid #faa41a
+	border-radius: 5px
+	padding-top: 10px
+.detail_room .detail__list
+	padding-left: 25px
+.sertificate_title-img
+	max-width: 37px
+	min-height: 40px
+.insight .combined_item-title,
+.secretroom .combined_item-title
+	font-size: 21px
+	vertical-align: bottom
+.insight .rooms .container,
+.secretroom .rooms .container
+	border-top: 1px solid #e1e1e1
+.insight .rooms,
+.secretroom .rooms
+	padding-top: 30px
+.insight .rooms .section_title,
+.secretroom .rooms .section_title
+	padding-top: 40px
+.insight .buy_section,
+.secretroom .buy_section
+	background: #f9f9f9
+.buy_image
+	min-height: 280px
+.sertificate_item
+	margin: 0 auto
+	text-align: center
+.sertificate_item .buy_description
+	margin: 0 auto
+.sertificate_item
+	margin-bottom: 30px
+.footer_insight
+	padding-top: 0
+	background: #f9f9f9 !important
+.rooms .section_title
+	margin-bottom: 20px
+a.i_want_btn
+	display: none
+/*page secretroom*/
+.secretroom .sertificates_text
+	font-size: 22px
+.secretroom .sertificates_text:last-child
+	padding-top: 20px
+.buy_section .col-xl-5:nth-child(odd) .sertificate_item:after
+	content: ''
+	border-right: 1px solid #e1e1e1
+	position: absolute
+	right: -20%
+	height: 90%
+	top: 0
+.secretroom .buy_section
+	background: #f9f9f9
+.secretroom.sertificates
+	background-position: center center
+.insight_out-var-p 
+	font-family: $MonBold
+	font-size: 22px
+	color: #070f12
+.insight_out-var-p-links
+	color: #1d1d1d
+	font-size: 22px
+	font-family: $MonM
+.insight_out-var-p-links a
+	color: #1d1d1d
+	border-bottom: 1px solid #1d1d1d
+.insight_out-var-p
+	margin-bottom: 0
+.insight_out-var
+	padding-left: 20px
+	position: relative
+	margin-bottom: 50px
+.insight_out-var:before
+	content: ''
+	position: absolute
+	height: 100%
+	width: 3px
+	left: 0
+	top: 0
+	background: #faa41a
+.insight_out .rooms
+	margin-top: 50px
+.insight_out .buy_section
+	background: #f9f9f9
+	margin-top: 30px
+.insight_out footer.footer_insight
+	background: #fff !important
+.insight_out .footer_info .container	
+	border: none
+.insight_out .sertificate_item.bt h4
+	padding-top: 20px
+
+/*Contacts page*/
+.contacts_title
+	font-family: $MonEB
+	font-size: 32px
+	color: #070f12
+	padding-top: 50px
+	padding-bottom: 40px
+.contacts .contacts_brand_name
+	font-family: $MonBold
+	font-size: 22px
+	color: #1d1d1d
+.contacts_brand_list-image
+	max-width: 15px
+.contacts_brand_list
+	list-style-type: none
+	padding-left: 0
+.contacts_brand_list li
+	line-height: 40px
+.contacts_brand_list li a
+	color: #070f12
+	text-decoration: none
+	margin-left: 10px
+.contacts_brand_image
+	padding-bottom: 10px
+.contacts_brand_list .mail
+	border-bottom: 1px solid #070f12
+.contacts_brand_list .address
+	display: -webkit-inline-flex
+	display: -moz-inline-flex
+	display: -ms-inline-flex
+	display: -o-inline-flex
+	display: inline-flex
+	white-space: pre-wrap
+.contact_form_title
+	font-family: $MonBold
+	font-size: 22px
+	color: #1d1d1d
+	padding-bottom: 15px
+.contact-form
+	padding-top: 90px
+.contact_form input
+	min-height: 50px
+	border-radius: 40px
+	padding-left: 20px
+	border-color: #959595
+.contact_form textarea
+	border-radius: 20px
+	padding-left: 20px
+	border-color: #959595
+.contact_form .form-group
+	margin-bottom: 0
+	padding-top: 10px
+.btn_send
+	border-radius: 32px
+	background-image: linear-gradient(-90deg, #fca416 0%, #ffe110 100%)
+	padding: 20px 100px !important
+	font-family: $MonBold
+	color: #1d1d1d
+	margin-top: 20px
+	margin-bottom: 50px
+.iti__selected-flag 
+	padding-left: 20px
+	background: #f9f9f9
+	border-top-left-radius: 30px
+	border-bottom-left-radius: 30px
+	border-right: 1px solid #959595
+.iti
+	display: block
+.contacts_footer .info
+	display: none
+.iti--allow-dropdown input, .iti--allow-dropdown input[type=tel]
+	padding-left: 60px
 // @import "media" // Всегда в конце
 
 @media only screen and (min-width: 768px) and (max-width: 1024px)
@@ -575,7 +797,7 @@ footer
 	.section_title
 		font-size: 22px
 	.last-certific
-		background: url('/img/4.png') no-repeat center center 
+		background: url('../img/4.png') no-repeat center center 
 		background-size: cover
 		padding-bottom: 30px
 	.title_combined
@@ -630,6 +852,52 @@ footer
 		border-top: none
 	.body-sertificates footer .container
 		border-top: none
+	.sertificates_slider
+		min-height: 370px
+	.slider_img
+		min-height: 370px
+	.detail_room 
+		margin-bottom: 30px
+	.i_want_btn
+		background: transparent
+		color: #1d1d1d
+		font-family: $MonBold
+		border: 1px solid transparent
+		position: relative
+		z-index: 1
+		padding: 15px 60px
+		border-radius: 40px
+		background: #f9f9f9
+
+	.i_want_btn:before
+		content: ''
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		padding: 15px
+		left: 0
+		margin: -2px !important
+		
+		border-radius: 40px
+		background: -webkit-linear-gradient(bottom, rgba(252,164,22,1) 0%, rgba(255,223,106,1) 100%)
+		z-index: -1
+	.detail .detail__list
+		margin-bottom: 60px
+	.footer_insight
+		padding-top: 0
+		background: #fff !important
+	.contacts footer .info
+		display: block
+	.body-sertificates .buy_section
+		padding-top: 120px
+	.bt
+		border-top: 1px solid #e7e7e7
+		padding-top: 50px
+	.i_want_btn
+		display: initial !important
+	.contacts
+		background: #fff !important
 @media only screen and (max-width: 550px)
 	.request_btn
 		display: none
@@ -685,7 +953,7 @@ footer
 		text-align: center
 	.hero
 		background-position: center 420px !important
-		background: url('/img/Landing page_m.png') no-repeat
+		background: url('../img/Landing page_m.png') no-repeat
 	.tablet
 		position: relative
 		left: 0
@@ -719,7 +987,7 @@ footer
 		top: 0
 		right: 0
 	.last-certific
-		background: url('/img/4.png') no-repeat center center 
+		background: url('../img/4.png') no-repeat center center 
 		background-size: cover
 		padding-bottom: 30px
 	.title_combined
@@ -740,7 +1008,159 @@ footer
 		padding-left: 0
 	.footer__list-item
 		display: inline-block
+	.sertificates_text-italic,
+	.sertificates_text
+		text-align: center !important
+	.what_can_do:before
+		left: 45%
+		width: 35px
+		height: 6px
+	.what_can_do
+		text-align: center !important
+		padding: 0
+		padding-top: 30px
+	.combined_item-text
+		color: #464646
+	.rooms_tabs ul li
+		margin: 0 auto
+		display: inline-block
+		margin-bottom: 30px
+	.rooms_tabs ul
+		display: inline-block
+		text-align: center
+	.order-lg-1
+		order: 1
+	.order-lg-2
+		order: 2
+	.tab-pane .row>div
+		padding-left: 0
+	.tab_title
+		padding-top: 30px
+		padding-left: 15px
+		padding-right: 15px
+	.tab_description
+		padding-left: 15px
+		padding-right: 15px
+	.detail ul:before
+		position: absolute
+		content: ''
+		left: 33%
+		top: 0
+		background-color: #faa41a
+		height: 6px
+		width: 113px
+	.detail__list
+		padding: 45px 15px 0px 15px
 
+	ul.detail__list li
+		width: 100%
+		text-align: left
+	.buy_section
+		padding-top: 30px
+	.buy_price
+		font-size: 32px
+	.ui-button
+		padding: 0
+	.action_section
+		text-align: center
+		margin-top: 30px
+	.item_add_to_cart
+		margin-top: 5px
+	.buy_price
+		display: none
+	.buy_price_m
+		margin-top: 15px
+		display: block
+		font-size: 32px
+		font-family: $MonBold
+		color: #1d1d1d
+		text-align: center !important
+	.buy_section .border-yes
+		border-bottom: 1px solid #e1e1e1
+		margin-bottom: 50px
+		padding-bottom: 20px
+	.buy_section
+		background: #f9f9f9
+	.sertificates
+		background: #fff
+	.body-sertificates footer
+		padding-top: 0
+	.body-sertificates footer .container
+		border: none
+	.rooms_tabs ul li
+		margin-bottom: 0
+	.up_img
+		height: 40px
+		margin-bottom: 40px
+		padding-bottom: 0
+		width: 100%
+	.navbar
+		padding: 20px 0
+	.slick-slide img
+		min-height: 170px
+	.sertificates_slider-item
+		min-height: 170px
+	.prev,
+	.next
+		top: 17%
+	.insight.sertificates .section_title,
+	.insight .sertificates_text
+
+		text-align: left !important
+	
+	.secretroom .sertificates_text
+		text-align: center
+	.secretroom.sertificates .section_title
+		text-align: center
+	.insight .section_title,
+	.secretroom .section_title
+		padding-top: 0
+	.detail__list
+		padding-top: 10px
+	.detail__list-item .address-link
+		font-family: $MonBold
+		display: block
+	.detail_room
+		margin-bottom: 30px
+	.insight .rooms .section_title,
+	.secretroom .rooms .section_title
+		text-align: center !important
+		padding-top: 20px
+	.insight .room_image,
+	.secretroom .room_image
+		padding-left: 0
+	.insight,
+	.secretrrom
+		background: #f9f9f9
+	.insight .detail ul:before
+		top: 0
+		left: 0
+		height: 100%
+		width: 3px
+	.buy_section .col-xl-5 .sertificate_item
+		border-bottom: 1px solid #e1e1e1
+	.insight .sertificate_item,
+	.secretroom .sertificate_item
+		margin-bottom: 45px
+	.insight .buy_image,
+	.secretroom.buy_image
+		min-height: auto
+	.footer_insight
+		background: #fff !important
+	.secretroom .detail__list-item .address-link
+		display: inline-block
+	.secretroom .buy_section .col-xl-5:last-child .sertificate_item
+		border: none
+	.detail__list-item .address-link
+		display: inline-block
+	.contacts
+		background: #fff !important
+	.contacts_title
+		text-align: center
+	.contacts_footer .info
+		display: none !important
+	.button_send
+		text-align: center
 @media only screen and (max-width: 1024px) and (min-width: 768px)
 	.tablet
 		max-width: 270px
@@ -751,11 +1171,15 @@ footer
 @media only screen and (max-width: 1600px) and (min-width: 1400px)
 	.hero
 		min-height: 1100px
+	.ui-button
+		padding: 0
 @media only screen and (max-width: 1500px) and (min-width: 1224px)
 	.tablet
 		max-width: 500px
 		top: 70%
 		left: 80%
+	.ui-button
+		padding: 0
 
 @media only screen and (min-width: 1500px)
 	.static-nav

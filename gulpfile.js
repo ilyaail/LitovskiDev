@@ -4,7 +4,7 @@ var gulp           = require('gulp'),
 		browserSync    = require('browser-sync'),
 		concat         = require('gulp-concat'),
 		uglify         = require('gulp-uglify'),
-		cleanCSS       = require('gulp-clean-css'),
+		// cleanCSS       = require('gulp-clean-css'),
 		rename         = require('gulp-rename'),
 		del            = require('del'),
 		imagemin       = require('gulp-imagemin'),
@@ -50,9 +50,8 @@ gulp.task('js', ['common-js'], function() {
 gulp.task('sass', function() {
 	return gulp.src('app/sass/**/*.sass')
 	.pipe(sass({outputStyle: 'expanded'}).on("error", notify.onError()))
-	.pipe(rename({suffix: '.min', prefix : ''}))
-	.pipe(autoprefixer(['last 15 versions']))
-	.pipe(cleanCSS()) // Опционально, закомментировать при отладке
+	// .pipe(autoprefixer(['last 15 versions']))
+	// .pipe(cleanCSS()) // Опционально, закомментировать при отладке
 	.pipe(gulp.dest('app/css'))
 	.pipe(browserSync.stream())
 });
@@ -75,10 +74,6 @@ gulp.task('build', ['removedist', 'imagemin', 'sass', 'js'], function() {
 		'app/*.html',
 		'app/.htaccess',
 		]).pipe(gulp.dest('dist'));
-
-	var buildCss = gulp.src([
-		'app/css/main.min.css',
-		]).pipe(gulp.dest('dist/css'));
 
 	var buildJs = gulp.src([
 		'app/js/scripts.min.js',
