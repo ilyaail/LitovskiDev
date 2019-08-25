@@ -771,6 +771,110 @@ a.i_want_btn
 	display: none
 .iti--allow-dropdown input, .iti--allow-dropdown input[type=tel]
 	padding-left: 60px
+
+/*cart page*/
+.img-remove
+	width: 15px
+.cart-remove
+	padding: 0 20px
+	width: 5%
+.cart-item
+	padding: 0 35px
+	width: 60%
+.cart-image
+	display: inline-block
+.cart-title
+	width: 55%
+	display: inline-block
+	vertical-align: middle
+	padding: 40px 0
+	padding-left: 20px
+.cart_table
+	border: 1px solid #eeeeee
+.cart_table td
+	border: 1px solid #eeeeee
+.cart-title h4
+	font-family: $MonBold
+	font-size: 18px
+	color: #1d1d1d
+.cart-title p
+	font-size: 14px
+	color: #1d1d1d
+.cart-quantity span
+	font-family: $MonBold
+	font-size: 16px
+	color: #1d1d1d
+.cart-quantity
+	padding: 40px 40px 40px 22px
+	width: 23%
+.cart-quantity_title
+	display: inline-block
+.cart-quantity_input
+	display: inline-block
+.cart-quantity_title
+	margin-right: 15px
+.cart-price span
+	color: #070f12
+	font-family: $MonBold
+	font-size: 22px
+.cart-price
+	text-align: center
+.total_price
+	text-align: right
+	padding: 40px 50px
+	color: #070f12
+	font-size: 22px
+.total_price span
+	font-family: $MonBold
+.cart .section_title
+	text-align: left
+	padding: 40px 0 60px 0
+.go_back
+	background: transparent
+	color: #1d1d1d
+	font-family: $MonBold
+	border: 1px solid transparent
+	position: relative
+	z-index: 1
+	padding: 20px 80px
+	border-radius: 40px
+	background: #f9f9f9
+	margin-right: 10px
+
+.go_back:before
+	content: ''
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	padding: 15px
+	left: 0
+	margin: -2px !important
+	border-radius: 40px
+	background: -webkit-linear-gradient(bottom, rgba(252,164,22,1) 0%, rgba(255,223,106,1) 100%)
+	z-index: -1
+.proceed_btn
+	background: linear-gradient(-90deg, #fca416 0%, #ffe110 100%)
+	border-radius: 32px
+	color: #1d1d1d
+	font-family: $MonBold
+	padding: 20px 50px
+.proceed_btn_m
+	display: none
+	background: linear-gradient(-90deg, #fca416 0%, #ffe110 100%)
+	border-radius: 32px
+	color: #1d1d1d
+	font-family: $MonBold
+	padding: 20px 50px
+.cart_action
+	padding-bottom: 200px
+.cart-title .cart-quantity_title,
+.price_m,
+.cart_remove_m,
+.cart-item .cart-quantity_input
+	display: none
+.cart_action
+	text-align: right
 // @import "media" // Всегда в конце
 
 @media only screen and (min-width: 768px) and (max-width: 1024px)
@@ -898,6 +1002,22 @@ a.i_want_btn
 		display: initial !important
 	.contacts
 		background: #fff !important
+	.cart-quantity,
+	.cart-price
+		display: none
+	.cart-title .cart-quantity_title span
+		color: #1d1d1d
+		font-family: $MonBold
+		display: block
+
+	.price_m
+		color: #070f12
+		font-family: $MonBold
+		font-size: 22px
+		float: right
+		display: block
+	.cart_action
+		text-align: right
 @media only screen and (max-width: 550px)
 	.request_btn
 		display: none
@@ -1161,6 +1281,58 @@ a.i_want_btn
 		display: none !important
 	.button_send
 		text-align: center
+	.cart-title
+		text-align: center
+		width: 100%
+		padding: 0
+	.cart-remove,
+	.cart-quantity,
+	.cart-price
+		display: none
+	.cart-item
+		width: 100%
+		text-align: center
+		padding: 0
+	.cart-title .cart-quantity_title
+		display: inline-block
+	.price_m
+		display: block
+	.cart-title .cart-quantity_title span
+		color: #1d1d1d
+		font-family: $MonBold
+		
+
+	.price_m
+		color: #070f12
+		font-family: $MonBold
+		font-size: 22px
+	.cart_remove_m
+		border: 1px solid #e1e1e1
+		padding: 15px 0
+		display: block
+	.price_m
+		padding-bottom: 20px
+	.cart_table
+		border: none
+	.cart_table tr
+		margin-top: 20px
+		display: block
+	.total_price
+		text-align: center
+		padding: 40px 35px
+	.proceed_btn_m
+		margin-bottom: 35px
+		display: block
+	.cart_action
+		text-align: center
+		padding-bottom: 100px
+	.cart .section_title
+		text-align: center
+		padding: 40px 0px 10px 0px
+	.cart-item .cart-quantity_input
+		display: inline-block
+	.proceed_btn 
+		display: none
 @media only screen and (max-width: 1024px) and (min-width: 768px)
 	.tablet
 		max-width: 270px
