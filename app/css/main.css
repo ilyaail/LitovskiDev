@@ -1344,6 +1344,356 @@ a.i_want_btn {
   text-align: right;
 }
 
+/*chekout page*/
+.checkout_e ul li a {
+  padding: 0;
+  font-size: 18px;
+  border-bottom: 1px solid #959595;
+  color: #959595;
+  border-radius: 0px !important;
+  margin-right: 10px;
+  font-family: MontserratBold, sans-serif;
+}
+
+.checkout_e ul li a.active {
+  color: #faa41a !important;
+  border-bottom: 1px solid #faa41a;
+  background: transparent !important;
+  border-radius: 0;
+  font-family: MontserratBold, sans-serif;
+  padding: 0;
+}
+
+.payment-form {
+  padding-top: 90px;
+}
+
+.delivery_tabs input {
+  min-height: 50px;
+  border-radius: 40px;
+  padding-left: 20px;
+  border-color: #959595;
+}
+
+.checkout_e .section_title {
+  padding-top: 45px;
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+.delivery_title {
+  color: #1d1d1d;
+  font-family: MontserratBold, sans-serif;
+  font-size: 18px;
+}
+
+.delivery_info {
+  color: #464646;
+  padding-bottom: 25px;
+}
+
+.delivery_tabs ul li {
+  padding-left: 0;
+}
+
+.delivery_tabs ul {
+  margin-bottom: 35px;
+}
+
+.payment-title {
+  color: #1d1d1d;
+  font-size: 18px;
+  margin-bottom: 25px;
+  font-family: MontserratBold, sans-serif;
+}
+
+.cart_block-count {
+  color: #070f12;
+  font-size: 22px;
+  text-align: left;
+  display: inline-block;
+  width: 90%;
+}
+
+.cart_block-item--image {
+  display: inline-block;
+}
+
+.cart_block-name {
+  color: #1d1d1d;
+  font-size: 14px;
+  font-family: MontserratBold, sans-serif;
+  display: inline-block;
+}
+
+.cart_block-info {
+  margin-bottom: 0;
+  color: #464646;
+  font-size: 14px;
+}
+
+.cart_block-price {
+  color: #070f12;
+  font-size: 14px;
+  font-family: MontserratBold, sans-serif;
+}
+
+.cart_block-item--info {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 20px;
+}
+
+.cart_block {
+  background: #fff;
+  padding: 15px 20px;
+  padding-bottom: 20px;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.04);
+}
+
+.cart_block-total_price p,
+.delivery-price p,
+.total-price p {
+  display: inline-block;
+}
+
+.cart_block-total_price span,
+.delivery-price span,
+.total-price span {
+  float: right;
+}
+
+.cart_block-total_price p,
+.delivery-price p,
+.cart_block-total_price span,
+.delivery-price span {
+  color: #464646;
+}
+
+.total-price p,
+.total-price span {
+  color: #070f12;
+  font-size: 18px;
+  font-family: MontserratBold, sans-serif;
+}
+
+.cart_block-total_price {
+  border-top: 1px solid #ededed;
+  padding-top: 25px;
+}
+
+.cart_block-edit {
+  color: #fca416;
+  text-decoration: none;
+}
+
+.cart_block-count {
+  margin-bottom: 25px;
+}
+
+.cart_block-edit:hover {
+  color: #fca416;
+  text-decoration: none;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+input[type=radio] + label:before {
+  content: "\26AB";
+  border: 1px solid #b5b5b5;
+  border-radius: 50%;
+  display: inline-block;
+  color: #fca416;
+  font-size: 0;
+  line-height: 18px;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  vertical-align: middle;
+  transition: font-size ease .3s;
+}
+
+input[type=radio]:checked + label:before {
+  font-size: 15px;
+  border: 1px solid #fca416;
+}
+
+input[type=radio] + label img,
+input[type=radio] + label span {
+  margin-left: 45px;
+}
+
+.agreement {
+  color: #959595;
+}
+
+.agreement a {
+  color: #959595;
+  text-decoration: underline;
+}
+
+.pay-sera-method,
+.paypal-method,
+.bank-method {
+  display: none;
+}
+
+/*404 page*/
+section.no_page {
+  min-height: 100vh;
+  position: relative;
+}
+
+.no_page-title {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.no_page-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%, -70%);
+  text-align: center;
+}
+
+.no_page-title {
+  color: #070f12;
+  font-family: MontserratBold, sans-serif;
+  font-size: 50px;
+}
+
+.no_page-message {
+  color: #070f12;
+  font-size: 18px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.no_page-button {
+  background: linear-gradient(-90deg, #fca416 0%, #ffe110 100%);
+  border-radius: 32px;
+  color: #1d1d1d;
+  font-family: MontserratBold, sans-serif;
+  padding: 20px 50px;
+  margin-top: 35px;
+}
+
+.no_page-button:hover {
+  color: #1d1d1d;
+  text-decoration: none;
+}
+
+.privacy p {
+  color: #464646;
+  font-size: 16px;
+}
+
+.privacy h4 {
+  font-size: 16px;
+}
+
+h1.privacy_title {
+  color: #070f12;
+  font-size: 32px;
+  font-family: MontserratBold, sans-serif;
+  padding: 30px 0;
+}
+
+.privacy-subtitle {
+  color: #464646;
+  font-family: MontserratBold, sans-serif;
+}
+
+.privacy-text span {
+  font-family: MontserratItalic, sans-serif;
+  font-weight: 700;
+}
+
+.privacy-list {
+  padding-left: 0px;
+}
+
+.privacy-list li {
+  list-style-type: none;
+}
+
+.privacy-list li:before {
+  content: '•';
+  color: #464646;
+  font-size: 20px;
+  line-height: 0;
+  padding-right: 15px;
+}
+
+.privacy-text {
+  margin-bottom: 0;
+}
+
+p.privacy-text-main {
+  font-size: 18px;
+}
+
+.privacy-subtitle {
+  margin: 30px 0;
+}
+
+.privacy-text.strong {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.list-subtitle {
+  font-size: 16px;
+  margin: 0;
+}
+
+.footer__list-item.active {
+  border-bottom: 2px solid #faa41a;
+}
+
+h3.rules-headlist {
+  font-size: 18px;
+  font-family: MontserratBold, sans-serif;
+  color: #1d1d1d;
+  margin-top: 40px;
+}
+
+.rules-list_item {
+  color: #464646;
+  margin-top: 20px;
+}
+
+.rules-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.method-title {
+  padding-left: 25px;
+}
+
+.method-pay-link {
+  padding: 15px;
+  border: 1px solid #e1e1e1;
+  height: 60px;
+  width: 175px;
+  border-radius: 10px;
+  line-height: 60px;
+  margin-top: 10px;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: inline-flex;
+}
+
+.method-pay-link img {
+  margin: 0 auto;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .hello_text {
     padding-top: 70px;
@@ -1528,6 +1878,9 @@ a.i_want_btn {
   }
   .cart_action {
     text-align: right;
+  }
+  .no_page-content {
+    transform: translate(-50%, -70%);
   }
 }
 
@@ -1948,6 +2301,25 @@ a.i_want_btn {
   }
   .proceed_btn {
     display: none;
+  }
+  .no_page-message {
+    font-size: 16px;
+  }
+  .no_page-button {
+    font-size: 16px;
+    padding: 20px 20px;
+  }
+  .no_page-content {
+    width: 100%;
+  }
+  .no_page-content {
+    transform: translate(-50%, -70%);
+  }
+  h1.privacy_title {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 50%;
+    padding-bottom: 0;
   }
 }
 

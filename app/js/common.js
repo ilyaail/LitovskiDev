@@ -6,6 +6,14 @@ $(document).ready(function(){
 
 });
     $(document).ready(function(){
+  
+  /*radio check*/
+// if($('label[for="pay-sera"]').on('click', function(){}))
+
+
+
+
+
   var input = document.querySelector("#phone");
   window.intlTelInput(input, {
       // allowDropdown: false,
