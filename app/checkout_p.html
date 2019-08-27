@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Title</title>
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta property="og:image" content="path/to/image.jpg">
+		<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+		<!-- Chrome, Firefox OS and Opera -->
+		<meta name="theme-color" content="#000">
+		<!-- Windows Phone -->
+		<meta name="msapplication-navbutton-color" content="#000">
+		<!-- iOS Safari -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+		<link rel="stylesheet" href="libs/bootstrap-grid/bootstrap.min.css">
+		<link rel="stylesheet" href="libs/bootstrap-grid/bootstrap-grid.min.css">
+		<link rel="stylesheet" href="libs/bootstrap-grid/bootstrap-reboot.min.css">
+		<link rel="stylesheet" href="libs/hamburger/hamburger.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet">
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+			<link rel="stylesheet" href="libs/jqueryUI/jquery-ui.min.css">
+			<link rel="stylesheet" href="libs/slick/slick.css">
+			<link rel="stylesheet" href="libs/slick/slick-theme.css">
+			<link rel="stylesheet" href="libs/niceselect/nice-select.css">
+			<link rel="stylesheet" href="libs/Phone/css/intlTelInput.min.css">
+			<link rel="stylesheet" href="css/main.css">
+			<link rel="stylesheet" href="libs/revealator/fm.revealator.jquery.min.css">
+		</head>
+		<body class="body-sertificates">
+			<header>
+				<div class="container">
+					<nav class="navbar navbar-expand-xl">
+						<div class="container-fluid">
+							<a class="navbar-brand" href="#"><img src="img/Logo.png" alt=""></a>
+							<ul class="static-nav">
+								<li class="static-nav-item">
+									<select name="lang_sw" id="lang">
+										<option value="LT">Lithuanian</option>
+										<option value="EN">English</option>
+									</select>
+								</li>
+								<li class="static-nav-item">
+									<a href="javascript:void(0);" class="request_btn"><i class="fas fa-shopping-cart"></i>  Shopping cart <span>2</span></a>
+								</li>
+								<li class="static-nav-item">
+									<a href="javascript:void(0);" class="request_btn_m"><i class="fas fa-shopping-cart"></i><span>2</span></a>
+								</li>
+							</ul>
+							<button class="navbar-toggler hamburger hamburger--vortex" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="hamburger-box">
+								<span class="hamburger-inner"></span>
+							</span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarMenu">
+								<ul class="navbar-nav ml-auto">
+									<li class="nav-item ">
+										<a class="nav-link active" href="#">About</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link certificate_open" href="javascript:void(0);">Certificates</a>
+										<div class="sertificates_drop">
+											<ul class="sertificates_drop-list">
+												<li class="sertificates_drop-list-item">
+													<a href="#" class="nav-link">SecretRoom</a>
+												</li>
+												<li class="sertificates_drop-list-item">
+													<a href="#" class="nav-link">Don't Panic</a>
+												</li>
+												<li class="sertificates_drop-list-item">
+													<a href="#" class="nav-link">Insight Out</a>
+												</li>
+												<li class="sertificates_drop-list-item">
+													<a href="#" class="nav-link">Combined</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Contacts</a>
+									</li>
+									
+									
+								</ul>
+								
+							</div>
+							
+						</div>
+						
+					</nav>
+				</div>
+			</header>
+			<main>
+				<section class="checkout_p" style="background-image: url('img/Fonas.png'); background-repeat: no-repeat; background-size: cover; background-color: #f9f9f9;
+				background-position: center 420px;">
+					<div class="container">
+						<h1 class="section_title">
+						Checkout
+						</h1>
+						<div class="row">
+							<div class="col-xl-5 col-lg-6">
+								
+								
+								<h4 class="delivery_title">Way of delivery</h4>
+								<form action="" class="delivery-form" id="way_del">
+									<div class="form-group">
+										<input type="radio" id="first-addr"  name="dl" class="radio_del"/>
+										<label for="first-addr" class="pay-sera"><p>Pick-up from Totorių g. 21A, Vilnius </p><span>Free</span></label>
+										
+										
+									</div>
+									<div class="form-group">
+										<input type="radio" id="second-addr" name="dl" class="radio_del" checked="checked" />
+										<label for="second-addr"><p>Pick-up from Šnipiškių g. 2, Vilnius</p> <span>Free</span></label>
+										</div>
+									<div class="form-group">
+										<input type="radio" id="third-addr" name="dl" class="radio_del"/>
+										<label for="third-addr"><p>Pick-up from Žirmūnų g. 68, Vilnius</p><span>Free</span></label>
+								
+									</div>
+									<div class="form-group">
+										<input type="radio" id="regular-del" name="dl" class="radio_del"/>
+										<label for="regular-del"><p>Regural post delivery (3-4 days)</p><span>1€</span></label>
+								
+									</div>
+									<div class="form-group">
+										<input type="radio" id="courier-del" name="dl" class="radio_del"/>
+										<label for="courier-del"><p>Courier delivery (1-2 days), Vilnius</p><span>3€</span></label>
+								
+									</div>
+								</form>
+								<div class="delivery_tabs">
+									<ul class="nav nav-pills" id="pills-tab" role="tablist">
+										<li class="nav-item">
+											<a class="nav-link active" id="pills-personal-tab" data-toggle="pill" href="#pills-personal" role="tab" aria-controls="pills-personal" aria-selected="true">Personal information</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" id="pills-business-tab" data-toggle="pill" href="#pills-business" role="tab" aria-controls="pills-business" aria-selected="false">For business</a>
+										</li>
+										
+									</ul>
+									<div class="tab-content" id="pills-tabContent">
+										<div class="tab-pane fade show active" id="pills-personal" role="tabpanel" aria-labelledby="pills-personal-tab">
+											
+											
+											<form id="payment-form" name="PaymentForm" class="form payment_form" action="#" onsubmit="" method="POST" role="form">
+												<div class="form-group">
+													
+													<input type="text" class="form-control" id="name" name="name" placeholder="Name *, Surname *" tabindex="1" required>
+												</div>
+												
+												<div class="form-group">
+													
+													<div class="iti iti--allow-dropdown"><div class="iti__flag-container"><div class="iti__selected-flag" role="combobox" aria-owns="country-listbox" tabindex="0" title="United States: +1"><div class="iti__flag iti__us"></div><div class="iti__arrow"></div></div></div><input type="tel" class="form-control" id="phone" name="phone" tabindex="2" placeholder="Phone number *"></div>
+												</div>
+												<div class="form-group">
+													
+													<input type="email" class="form-control" id="email" name="email" placeholder="Email *" tabindex="3">
+												</div>
+												<div class="form-group address">
+													
+													<input type="text" class="form-control" id="address" name="address" placeholder="Address *" tabindex="4">
+												</div>
+												<div class="form-group city">
+													
+													<input type="text" class="form-control" id="city" name="City" placeholder="City *" tabindex="5">
+												</div>
+												<div class="form-group zip">
+													
+													<input type="tel" class="form-control" id="zip" name="zip" placeholder="Zip code *" tabindex="6">
+												</div>
+												<div class="form-group comments">
+													
+													<input type="text" class="form-control" id="comments" name="comments" placeholder="Comments" tabindex="7">
+												</div>
+											</form>
+											
+										</div>
+										<div class="tab-pane fade" id="pills-business" role="tabpanel" aria-labelledby="pills-business-tab">
+											
+											<form id="payment-form" name="PaymentForm" class="form payment_form" action="#" onsubmit="" method="POST" role="form">
+												<div class="form-group">
+													
+													<input type="text" class="form-control" id="name_b" name="name_b" placeholder="Business Name *" tabindex="1">
+												</div>
+												<div class="form-group">
+													
+													<input type="text" class="form-control" id="reg_b" name="reg_b" placeholder="Registration code *" tabindex="1">
+												</div>
+												<div class="form-group">
+													
+													<input type="text" class="form-control" id="vat_b" name="vat_b" placeholder="VAT *" tabindex="1">
+												</div>
+												<div class="form-group">
+													
+													<input type="text" class="form-control" id="adr_b" name="adr_b" placeholder="Adress *" tabindex="2">
+												</div>
+												<div class="form-group">
+													
+													<div class="iti iti--allow-dropdown"><div class="iti__flag-container"><div class="iti__selected-flag" role="combobox" aria-owns="country-listbox" tabindex="0" title="United States: +1"><div class="iti__flag iti__us"></div><div class="iti__arrow"></div></div></div><input type="tel" class="form-control" id="phone" name="phone" tabindex="3" placeholder="Phone number *"></div>
+												</div>
+												
+												
+											</form>
+											
+											
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-5 col-lg-6 offset-xl-2">
+								<div class="cart_block">
+									<h4 class="cart_block-count">
+									2 items
+									</h4>
+									<a href="#" class="cart_block-edit">Edit</a>
+									<div class="cart_block-item">
+										<div class="cart_block-item--image">
+											<img src="img/paper.png" alt="" class="img-responsive">
+										</div>
+										<div class="cart_block-item--info">
+											<h4 class="cart_block-name">Paper certificate (Don’t Panic)</h4>
+											<p class="cart_block-info">Packed with a nice wrapping
+												paper.
+											</p>
+											<span class="cart_block-price">50 €</span>
+										</div>
+									</div>
+									<div class="cart_block-item">
+										<div class="cart_block-item--image">
+											<img src="img/paper.png" alt="" class="img-responsive">
+										</div>
+										<div class="cart_block-item--info">
+											<h4 class="cart_block-name">Paper certificate (Don’t Panic)</h4>
+											<p class="cart_block-info">Packed with a nice wrapping
+												paper.
+											</p>
+											<span class="cart_block-price">50 €</span>
+										</div>
+									</div>
+									<div class="cart_block-total_price">
+										<p>Subtotal</p>
+										<span>100.00 €</span>
+									</div>
+									<div class="delivery-price">
+										<p>Delivery</p>
+										<span>Regural post</span>
+									</div>
+									<div class="total-price">
+										<p>Total price</p>
+										<span>100.00 €</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<h4 class="payment-title">
+						Payment method
+						</h4>
+						<div class="row">
+							<div class="col-xl-12">
+								<form action="" class="method-form" id="form-1">
+									<div class="form-group">
+										<input type="radio" id="pay-sera" data-id="pay-sera-method" name="rr" class="radio_option"/>
+										<label for="pay-sera" class="pay-sera"><img src="img/Bank icons/Paysera account.png" alt=""></label>
+										
+										<div class="pay-sera-method">
+											<p class="method-title">Electronic banking:</p>
+											
+											<a href="javascrit:void(0);" class="method-pay-link"><img src="img/Bank icons/JSC bank Danske.png" alt="" class="method-img"></a>
+											<a href="javascrit:void(0);" class="method-pay-link">
+											<img src="img/Bank icons/JSC bank DNB.png" alt="" class="method-img"></a>
+											<a href="javascrit:void(0);" class="method-pay-link">
+											<img src="img/Bank icons/JSC bank Citadele.png" alt="" class="method-img">
+										</a>
+										<a href="javascrit:void(0);" class="method-pay-link">
+											<img src="img/Bank icons/JSC bank Nordea.png" alt="" class="method-img"></a>
+											<a href="javascrit:void(0);" class="method-pay-link">
+											<img src="img/Bank icons/JSC bank SEB.png" alt="" class="method-img"></a>
+											<a href="javascrit:void(0);" class="method-pay-link">
+											<img src="img/Bank icons/JSC bank Swedbank.png" alt="" class="method-img"></a>
+											<a href="javascrit:void(0);" class="method-pay-link">
+											<img src="img/Bank icons/JSC bank Siauliu bankas.png" alt="" class="method-img"></a>
+											<a href="javascrit:void(0);" class="method-pay-link">
+											<img src="img/Bank icons/JSC bank Medicinos bankas.png" alt="" class="method-img"></a>
+											<a href="javascrit:void(0);" class="method-pay-link">
+											<img src="img/Bank icons/Lithuanian credit union.png" alt="" class="method-img"></a>
+											<p class="method-title">E-money:</p>
+											<a href="javascrit:void(0);" class="method-pay-link">
+											<img src="img/Bank icons/International WebMoney system.png" alt="" class="method-img"></a>
+											<a href="javascrit:void(0);" class="method-pay-link">
+											<img src="img/Bank icons/Paysera account.png" alt="" class="method-img"></a>
+											<p class="method-title">Other payment systems:</p>
+											<a href="javascrit:void(0);" class="method-pay-link">
+											<img src="img/Bank icons/Paypost kiosk and Lithuanian post ofiice.png" alt="" class="method-img"></a>
+											<a href="javascrit:void(0);" class="method-pay-link">
+											<img src="img/Bank icons/In Perlas lottery terminals.png" alt="" class="method-img"></a>
+											<a href="javascrit:void(0);" class="method-pay-link">
+											<img src="img/Bank icons/general financing.png" alt="" class="method-img">
+											</a>
+											<a href="javascrit:void(0);" class="method-pay-link">
+												<img src="img/Bank icons/Mokilizingas.png" alt="" class="method-img">
+											</a>
+											<a href="javascrit:void(0);" class="method-pay-link">
+											<img src="img/Bank icons/MAXIMA lietuva.png" alt="" class="method-img"></a>
+											<a href="javascrit:void(0);" class="method-pay-link">
+											<img src="img/Bank icons/Lietuvos spauda and narvesen kiosks.png" alt="" class="method-img"></a>
+											<a href="javascrit:void(0);" class="method-pay-link">
+											<img src="img/Bank icons/Pay by cash.png" alt="" class="method-img"></a>
+										</div>
+									</div>
+									<div class="form-group">
+										<input type="radio" id="paypal" name="rr" class="radio_option"/>
+										<label for="paypal"><img src="img/Bank icons/payment.png" alt=""></label>
+										
+										<!-- <div class="paypal-method">
+											<img src="img/Bank icons/general financing.png" alt="" class="method-img">
+											<img src="img/Bank icons/general financing.png" alt="" class="method-img">
+											<img src="img/Bank icons/general financing.png" alt="" class="method-img">
+											<img src="img/Bank icons/general financing.png" alt="" class="method-img">
+											<img src="img/Bank icons/general financing.png" alt="" class="method-img">
+											<img src="img/Bank icons/general financing.png" alt="" class="method-img">
+											<img src="img/Bank icons/general financing.png" alt="" class="method-img">
+											<img src="img/Bank icons/general financing.png" alt="" class="method-img">
+											<img src="img/Bank icons/general financing.png" alt="" class="method-img">
+										</div> -->
+									</div>
+									<div class="form-group">
+										<input type="radio" id="bank" name="rr" class="radio_option"/>
+										<label for="bank"><span>Bank card</span></label>
+										
+										<div class="bank-method">
+											<form action="" id="form-2" class="bank-card-form ">
+												<div class="form-group bank-card-form-input">
+													<input class="text" value="" type="tel" id="card-number" placeholder="Card number">
+												</div>
+												<div class="form-group bank-card-form-input" >
+													<input  class="text" value="" type="tel" id="card-exp" placeholder="Expiry (MM/YY)" data-valid-example="11/18">
+												</div>
+												<div class="form-group bank-card-form-input">
+													<input  class="text" value="" type="text" id="card-cvv" placeholder="Card code (CVC)" >
+												</div>
+											</form>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="button_send">
+								<button type="submit" onlcik="checkform()" class="btn_send " data-toggle="modal" data-target="#orderModal">Place order</button>
+							</div>
+							
+						</div>
+						<p class="agreement">
+							By placing your order you agree to our <a href="#">Buying rules</a> and <a href="">Privacy Policy</a>.
+						</p>
+					</div>
+				</section>
+				
+			</main>
+			<footer>
+				<div class="footer_info">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12">
+								<p class="info">For more information you can <a href="#" class="info_link">Contact us</a></p>
+								<ul class="footer__list">
+									<li class="footer__list-item"><a href="#">Buying rules</a></li>
+									<li class="footer__list-item"><a href="#">Privacy Policy</a></li>
+									<li class="footer__list-item"><a href="#">Our location</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Modal -->
+<div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+
+      <div class="modal-body">
+      	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      	<img src="img/exit.svg" alt="" class="modal_close">
+      </button>
+   		<img src="img/checked (2).svg" alt="" class="img-responsive modal_check">
+   		<h3 class="modal_title">Thank you!</h3>
+   		<p class="modal_text">After receiving your payment we will send you a confirmation email with order details.
+
+</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+			</footer>
+			
+			<script src="libs/jquery/dist/jquery.min.js"></script>
+			<script src="libs/bootstrap-grid/bootstrap.min.js"></script>
+			<script src="libs/bootstrap-grid/bootstrap.bundle.min.js"></script>
+			<script src="libs/niceselect/jquery.nice-select.min.js"></script>
+			<script src="libs/jqueryUI/jquery-ui.min.js"></script>
+			<script src="libs/slick/slick.min.js"></script>
+			<script src="libs/Phone/js/intlTelInput.min.js"></script>
+			<script src="libs/Phone/js/utils.js"></script>
+			<script src="libs/cleave/cleave.js"></script>
+			<script src="js/common.js"></script>
+			<script src="js/smoothscroll.js"></script>
+			<script src="libs/nicescroll/jquery.nicescroll.min.js"></script>
+			<script src="libs/revealator/fm.revealator.jquery.min.js"></script>
+		</body>
+	</html>
